@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nursery Management System</title>
+</head>
+    <img src="plant_img.PNG" width="200"hieght="200">
+    <body>
+    <h1 id="top">Nursery Management</h1>
+    <p>Welcome to our plant nursery! Below is a list of plants currently available for purchase along with their prices. Please fill out the form to place your order or request an inquiry.</p>
+    
+    <!-- Added Unordered List -->
+    <h3>Types of Plants Available:</h3>
+    <ul>
+        <li>Flowering Plants</li>
+        <li>Indoor Plants</li>
+        <li>Medicinal Plants</li>
+        <li>Air-Purifying Plants</li>
+        <li>Succulents</li>
+    </ul>
+
+    <h2>Available Plants & Cost</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Plant</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Rose</td>
+            <td>₹100</td>
+        </tr>
+        <tr>
+            <td>Jasmine</td>
+            <td>₹80</td>
+        </tr>
+        <tr>
+            <td>Money Plant</td>
+            <td>₹120</td>
+        </tr>
+        <tr>
+            <td>Spider Plant</td>
+            <td>₹90</td>
+        </tr>
+        <tr>
+            <td>Aloe Vera</td>
+            <td>₹130</td>
+        </tr>
+    </table>
+
+    <!-- Added Ordered List -->
+    <h3>Steps to Place an Order:</h3>
+    <ol>
+        <li>Enter your name and email address.</li>
+        <li>Select the plant you wish to buy.</li>
+        <li>Choose if you are an existing customer.</li>
+        <li>Pick any additional services you need.</li>
+        <li>Provide feedback or reviews.</li>
+        <li>Click on "Submit Order" to finish.</li>
+    </ol>
+
+    <h2>Ordering Site</h2>
+    <form>
+        <p>
+            <label for="name">Customer Name:</label><br>
+            <input type="text" id="name" name="customer_name" required>
+        </p>
+        <p>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="customer_email" required>
+        </p>
+        <p>
+            <label for="plant_choice">Select Plant:</label><br>
+            <select id="plant_choice" name="plant_choice">
+                <option value="rose">Rose - ₹100</option>
+                <option value="jasmine">Jasmine - ₹80</option>
+                <option value="moneyplant">Money Plant - ₹120</option>
+                <option value="spiderplant">Spider Plant - ₹90</option>
+                <option value="aloevera">Aloe Vera - ₹130</option>
+            </select>
+        </p>
+        <p>
+            <label>Are you an existing customer?</label><br>
+            <input type="radio" id="yes" name="existing_customer" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="existing_customer" value="no">
+            <label for="no">No</label>
+        </p>
+        <p>
+            <label>Select additional services:</label><br>
+            <input type="checkbox" id="potting" name="services" value="potting">
+            <label for="potting">Potting</label><br>
+            <input type="checkbox" id="home_delivery" name="services" value="home_delivery">
+            <label for="home_delivery">Home Delivery</label><br>
+            <input type="checkbox" id="fertilizer" name="services" value="fertilizer">
+            <label for="fertilizer">Fertilizer</label><br>
+            <input type="checkbox" id="roof-top-setup" name="services" value="roof-top setup">
+            <label for="roof-top-setup">Roof-top setup</label>
+        </p>
+        <p>
+            <label for="notes">Feedbacks and Reviews:</label><br>
+            <textarea id="notes" name="notes" rows="3" cols="35"></textarea>
+        </p>
+        <button type="submit">Submit Order</button>
+    </form>
+
+    <!-- Added Back to Top Link -->
+    <p><a href="#top">Back to Top</a></p>
+</body>
+</html>
